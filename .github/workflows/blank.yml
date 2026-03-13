@@ -9,6 +9,9 @@ jobs:
     runs-on: ubuntu-latest
 
   steps:
+      name: Checkou do código
+      uses: actions/checkout@v4
+      
       name: Escrever hello world
       run: echo "Hello World"
 
