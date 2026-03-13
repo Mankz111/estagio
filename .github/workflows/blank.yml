@@ -13,6 +13,5 @@ jobs:
       - name: Code check
         uses: actions/checkout@v4
 
-    steps:
       - name: imprimir ola
         run: echo Olá mundo
