@@ -10,6 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Olá mundo
-        run: echo "Mundito PeQUEnito"
+      - name: data
+        run: (date)
+      - name: user do commit
+        run: (${{ github.actor }})
+      - name: SHA do commit
+        run: (${{ github.sha }})
+      
 
