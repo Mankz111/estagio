@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: data
-        run: echo (date)
+        run: date
       - name: user do commit
-        run: echo (${{ github.actor }})
+        run: ${{ github.actor }}
       - name: SHA do commit
-        run: echo (${{ github.sha }})
+        run: ${{ github.sha }}
       
 
