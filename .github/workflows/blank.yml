@@ -9,6 +9,6 @@ jobs:
     runs-on: ubuntu-latest
 
   steps:
-    - name: Escrever hello world
+      name: Escrever hello world
       run: echo "Hello World"
 
