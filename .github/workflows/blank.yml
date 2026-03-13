@@ -3,15 +3,13 @@ name: hello
 on:
   push:
     branches:
-      -main
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Code check
-        uses: actions/checkout@v4
+      - name: Olá mundo
+        run: echo "Mundito PeQUEnito"
 
-      - name: imprimir ola
-        run: echo Olá mundo
