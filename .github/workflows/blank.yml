@@ -13,8 +13,8 @@ jobs:
       - name: data
         run: date
       - name: user do commit
-        run: ${{ github.actor }}
+        run: echo ${{ github.actor }}
       - name: SHA do commit
-        run: ${{ github.sha }}
+        run: echo ${{ github.sha }}
       
 
