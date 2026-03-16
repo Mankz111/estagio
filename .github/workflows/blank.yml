@@ -15,9 +15,6 @@ jobs:
     steps:
     - name: não_sei_para
       run: encho "Testes feitos a buildar"
-
-
-jobs:
   test:
   build:
     runs-on: ubuntu-latest
