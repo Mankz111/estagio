@@ -4,8 +4,16 @@ on:
   push:
     branches:
       - main
+
+permissions:
+  id-token: write
+  contents: read
+
+
 env:
  IMAGE_NAME: exec1
+
+
 jobs:
   build:
     runs-on: ubuntu-latest
