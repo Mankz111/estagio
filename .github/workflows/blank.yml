@@ -14,9 +14,8 @@ jobs:
     steps:
     - name: build
       run: encho "Testes feitos a buildar"
-    steps:
-      - name: test
-        needs: build
-        run: echo "A correr testes"
+    - name: test
+      needs: build
+      run: echo "A correr testes"
 
 
