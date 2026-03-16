@@ -12,14 +12,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: build
-      run: echo "Build Docker"
-      run: docker build -t exec1
+      run: |
+        echo "Build Docker"
+        docker build -t exec1
+
   run_docker:
     runs-on: ubuntu-latest
     steps:
-    - name: run
-    needs: build
-    run: echo "Running Docker"
-    run: docker run -d -p 8000:80 exec1
+      - name: run
+        needs: build
+        run: |
+          echo "Running Docker"
+          docker run -d -p 8000:80 exec1
     
 
