@@ -18,9 +18,9 @@ jobs:
 
   run_docker:
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: run
-        needs: build
         run: |
           echo "Running Docker"
           docker run -d -p 8000:80 exec1
