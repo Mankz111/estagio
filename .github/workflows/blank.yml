@@ -5,16 +5,26 @@ on:
     branches:
       - main
 
+
+
 jobs:
+  job_de_build:
   build:
     runs-on: ubuntu-latest
 
     steps:
+    - name: não_sei_para
+      run: encho "Testes feitos a buildar"
+
+
+jobs:
+  test:
+  build:
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
       - name: data
-        run: date
-      - name: user do commit
-        run: echo ${{ github.actor }}
-      - name: SHA do commit
-        run: echo ${{ github.sha }}
-      
+        run: echo "A correr testes"
+
 
