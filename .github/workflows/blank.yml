@@ -56,7 +56,7 @@ jobs:
           --registry-password ${{ secrets.ACR_PASSWORD }} \
           --ports 80 \
           --dns-name-label $IMAGE_NAME \
-          --os-type Linux
+          --os-type Linux \
           --cpu 1 \
           --memory 1
     
